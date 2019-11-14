@@ -1,0 +1,64 @@
+<style>
+[type='checkbox'] {
+margin: 10px 15px;
+}
+#cat-photo-form {
+background-color: green;
+}
+.red-text {
+ color: red;
+}
+.thick-green-border {
+border-color: green;
+border-width: 10px;
+border-style: solid;
+border-radius: 50%;
+}
+.silver-background{
+background-color: silver;
+}
+.smaller-image{
+width: 60px;
+}
+h1 {
+font-family: Lobster, monospace;
+}
+p {
+font-size: 16px;
+font-family: monospace;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<h1 class="red-text">NyakongApp</h1>
+<p class="red-text">View more <a href="http://www.instagram.com/nyakong.yang/?hl=en">Nyakong Photos</a></p>
+<a href="#"><img class="thick-green-border smaller-image" src="C:\Users\Admin\Desktop\KK.jpg"></a>
+<main>
+<div class="silver-background">
+ <p>Things Nyakong  love:</p>
+  <ul>
+    <li>Modelling</li>
+    <li>Shopping</li>
+    <li>afternoon nap</li>
+  </ul>
+  <p>Things Nyakong hate</p>
+  <ul>
+    <li>Cold shower</li>
+    <li>Fake friends</li>
+    <li>Messing with her intetlligence</li>
+  </ul>
+  </div>
+  <form id="cat-photo-form" action="/submit-cat-photos">
+   <label for="indoor">
+      <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor
+    </label>
+	<label for="outdoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor" checked>Outdoor
+    </label>
+	<label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Knowledgeable</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+  <input type="text" required>
+  <button type="submit">submit</button>
+
+  </form>
+</main>
